@@ -190,9 +190,11 @@ nav ul li a {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    .about, .work {
+        margin-right: 20px;
+    }
 
     .about-content {
-        margin-right: 20px;
         margin-left: 20px;
         margin-bottom: 10px;
     }
