@@ -196,12 +196,9 @@ nav ul li a {
     }
 
     .about-content {
-        margin-right: 0;
+        margin-right: 20px;
+        margin-left: 20px;
         margin-bottom: 10px;
-    }
-
-    .buttons {
-        flex-direction: column;
     }
 
     .buttons span {
