@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const copyEmailButton = document.getElementById('copy-email');
 
     contactMeButton.addEventListener('click', () => {
-        window.location.href = 'mailto:email@example.com';
+        window.location.href = 'mailto:sr@srxlct.com';
     });
 
     copyEmailButton.addEventListener('click', () => {
-        navigator.clipboard.writeText("denis@srxlct.com").then(() => {
+        navigator.clipboard.writeText("sr@srxlct.com").then(() => {
             alert("Email copied to clipboard!");
         });
     });
