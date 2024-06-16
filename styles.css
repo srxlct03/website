@@ -187,3 +187,24 @@ nav ul li a {
         opacity: 1;
     }
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about, .work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons span {
+        display: none;
+    }
+}
