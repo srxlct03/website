@@ -97,7 +97,7 @@ main {
 }
 
 .social-media a:hover {
-    color: #aacef1;
+    color: #851ccf;
 }
 
 .profile-info {
@@ -142,6 +142,12 @@ main {
     font-weight: 200;
 }
 
+.contactme {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+}
+
 .projects {
     margin: 20px 0;
     max-width: 900px;
@@ -162,6 +168,7 @@ main {
 }
 
 .project-item {
+    position: relative; /* Add relative positioning to project item */
     background-color: #1c1c1c;
     border-radius: 10px;
     padding: 20px;
@@ -169,6 +176,20 @@ main {
     transition: transform 0.3s ease;
     width: 100%;
     box-sizing: border-box;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 1.1em;
+    color: #fff;
+    transform: rotate(-45deg); /* Tilt the arrow to point to the corner */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.project-item:hover .arrow-icon {
+    transform: rotate(0deg); /* Rotate back to horizontal on hover */
 }
 
 .project-item img {
@@ -202,6 +223,11 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 4px;
+}
+
+.stat-item.contact-me {
+    background: linear-gradient(to bottom right, #1c1c1c, #6a0dad);
+    color: white; /* Ensure text color is white for readability */
 }
 
 /* Mobile specific styles */
