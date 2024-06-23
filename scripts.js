@@ -22,12 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = 'mailto:your-email@example.com';
     });
 
-    // Project item click functionality
-    const projectItems = document.querySelectorAll('.project-item');
-    projectItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const projectName = item.getAttribute('data-url');
-            window.location.href = `https://srxlct.com/${projectName}`;
+    document.addEventListener("DOMContentLoaded", () => {
+        // Smooth transition to project pages
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const target = event.target.getAttribute('href');
+                gsap.to(document.body, { opacity: 0, duration: 0.5, onComplete: () => {
+                    window.location.href = target;
+                }});
+            });
         });
     });
 });
