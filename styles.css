@@ -227,7 +227,7 @@ main {
 
     main {
         margin-top: 100px; /* Adjust top margin for main content */
-        width: 100%; /* Ensure main content takes full width */
+        width: 90%; /* Ensure main content takes full width */
     }
 
     .grid-container {
@@ -242,12 +242,12 @@ main {
     }
 
     .profile-info {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr 1fr; /* Single column on mobile */
         gap: 5px;
     }
 
     .stat-item {
-        width: 100%; /* Full width stat items */
+        width: 90%; /* Full width stat items */
     }
 
     .projects-grid {
