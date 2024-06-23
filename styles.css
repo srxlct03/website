@@ -227,7 +227,7 @@ main {
 
     main {
         margin-top: 50px; /* Adjust top margin for main content */
-        width: 90%; /* Ensure main content takes full width */
+        width: 95%; /* Ensure main content takes full width */
     }
 
     .grid-container {
@@ -247,7 +247,7 @@ main {
     }
 
     .stat-item {
-        width: 90%; /* Full width stat items */
+        width: 100%; /* Full width stat items */
     }
 
     .projects-grid {
