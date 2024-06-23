@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>srxlct</title>
+    <title>srx | Denis</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="preloader">
@@ -47,47 +47,77 @@
             </g>
         </svg>
     </div>
-    <header>
-        <div class="time" id="time"></div>
-        <div class="profile">
-            <img src="images/profile.jpeg" alt="Profile Picture">
-            <h1>Denis Leung</h1>
-            <h2>@srxlct</h2>
-        </div>
-        <div class="buttons">
-            <button id="contact-me">
-                <i class="fas fa-envelope"></i> Contact me
-            </button>
-            <button id="copy-email">
-                <i class="fas fa-copy"></i> Copy email
-            </button>
-        </div>
-        <div class="social-media">
-            <a href="https://twitter.com/s1n3ddd" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/srxlct03" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://instagram.com/srxlct" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-    </header>
     <main>
-        <section class="about">
-            <div class="about-content">
-                <h3>About</h3>
-            </div>
-            <div class="about-text">
-                <p>Just For Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun Fun</p>
-                <p>Not sure what can I write here lol.</p>
+        <section class="hero">
+            <h1>Hi, I'm Denis</h1>
+            <p>Music Producer / Programmer</p>
+            <div class="grid-container">
+                <div class="profile">
+                    <img src="images/profile.jpeg" alt="Profile Picture">
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <div class="stat-item">
+                        <span class="bold">20+</span>
+                        <span class="normal">Projects Done</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="bold">Verified</span>
+                        <span class="normal">Spotify Artist</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="bold">100+</span>
+                        <span class="normal">done</span>
+                    </div>
+                    <div class="stat-item" onclick="location.href='mailto:sr@srxlct.com'"><span>Contact me</span></div>
+                </div>
             </div>
         </section>
-        <section class="work">
-            <h3>Work</h3>
-            <div class="work-item">
-                <h4>Not working rn.</h4>
-                <img src="images/gamma.jpg">
-            </div>
-            <div class="work-item">
-                <h4>I wish i have some job.</h4>
-                <img src="images/beta.jpg">
+        <section class="projects">
+            <h2>Music Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item" onclick="location.href='wen'">
+                    <h3>吻</h3>
+                    <img src="images/wen.jpg" alt="吻">
+                    <div class="project-tags">
+                        <span class="tag">Lo-Fi</span>
+                        <span class="tag">R&B</span>
+                        <span class="tag">Cantopop</span>
+                        <span class="tag">Autotune</span>
+                    </div>
+                </div>
+                <div class="project-item" onclick="location.href='gday.html'">
+                    <h3>G-DAY</h3>
+                    <img src="images/gday.jpg" alt="G-DAY">
+                    <div class="project-tags">
+                        <span class="tag">R&B</span>
+                        <span class="tag">Mandopop</span>
+                        <span class="tag">Rap</span>
+                    </div>
+                </div>
+                <div class="project-item" data-url="befriend">
+                    <h3>Be Friend</h3>
+                    <img src="images/befriend.jpg" alt="Be Friend">
+                    <div class="project-tags">
+                        <span class="tag">Mandopop</span>
+                        <span class="tag">Hiphop</span>
+                    </div>
+                </div>
+                <div class="project-item" data-url="buke">
+                    <h3>不可</h3>
+                    <img src="images/buke.jpg" alt="不可">
+                    <div class="project-tags">
+                        <span class="tag">R&B</span>
+                        <span class="tag">Cantopop</span>
+                        <span class="tag">Autotune</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
