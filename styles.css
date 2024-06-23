@@ -203,3 +203,64 @@ main {
     justify-content: center;
     gap: 4px;
 }
+
+/* Mobile specific styles */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 0 10px; /* Reduce padding on mobile screens */
+    }
+
+    header {
+        padding: 10px 0; /* Adjust header padding */
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0; /* Add margin to nav links */
+    }
+
+    main {
+        margin-top: 100px; /* Adjust top margin for main content */
+        width: 100%; /* Ensure main content takes full width */
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column; /* Change grid to flex column on mobile */
+        align-items: center;
+    }
+
+    .profile img {
+        width: 80px; /* Smaller profile picture */
+        height: 80px;
+    }
+
+    .profile-info {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 5px;
+    }
+
+    .stat-item {
+        width: 100%; /* Full width stat items */
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-direction: column; /* Change grid to flex column on mobile */
+        align-items: center;
+    }
+
+    .project-item {
+        width: 100%; /* Full width project items */
+    }
+
+    .project-tags {
+        justify-content: center; /* Center tags on mobile */
+    }
+}
